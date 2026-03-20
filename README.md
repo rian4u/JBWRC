@@ -2,14 +2,26 @@
 
 팀 전체가 동일한 Claude Code 환경(지침, 스킬, 플러그인)을 사용할 수 있도록 설정을 공유하는 레포입니다.
 
-## 빠른 설치
+## 설치 방법
 
-### Windows (PowerShell)
+### 방법 1: 더블클릭 설치 (가장 쉬움)
+
+1. https://github.com/rian4u/JBWRC 에 접속
+2. 초록색 **Code** 버튼 → **Download ZIP** 클릭
+3. 압축 해제
+4. **`설치.bat`** 더블클릭
+5. 끝!
+
+> **사전 조건:** [Git](https://git-scm.com/download/win)이 설치되어 있어야 합니다.
+
+### 방법 2: 명령어 설치 (개발자용)
+
+**PowerShell:**
 ```powershell
-git clone https://github.com/rian4u/JBWRC.git %TEMP%\JBWRC && powershell -ExecutionPolicy Bypass -File %TEMP%\JBWRC\install.ps1
+git clone https://github.com/rian4u/JBWRC.git $env:TEMP\JBWRC; powershell -ExecutionPolicy Bypass -File $env:TEMP\JBWRC\install.ps1
 ```
 
-### Windows (Git Bash) / Mac / Linux
+**Git Bash / Mac / Linux:**
 ```bash
 git clone https://github.com/rian4u/JBWRC.git /tmp/JBWRC && bash /tmp/JBWRC/install.sh
 ```
