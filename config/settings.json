@@ -1,7 +1,21 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "Bash(python:*)",
+      "Read(//c/Users/JBWRC/.claude/**)",
+      "Bash(mkdir -p \"C:/Users/JBWRC/.claude/docs/users\")",
+      "Bash(mv \"d:/project/테스트/docs/users/과장.md\" \"C:/Users/JBWRC/.claude/docs/users/과장.md\")",
+      "Read(//d/project/init/**)",
+      "WebSearch",
+      "WebFetch(domain:pypi.org)",
+      "Bash(pip install:*)",
+      "Bash(echo \"EXIT_CODE=$?\")",
+      "Edit(~/.claude/skills/config-import/**)"
+    ],
+    "additionalDirectories": [
+      "d:\\project\\테스트\\docs",
+      "C:\\Users\\JBWRC\\.claude",
+      "C:\\Users\\JBWRC\\.claude\\skills"
     ]
   },
   "enabledPlugins": {
